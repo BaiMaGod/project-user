@@ -1,0 +1,64 @@
+<!-- 功能全局配置信息 -->
+<config>
+    <!-- 功能基础信息 -->
+    <info>
+    	<name>login</name>
+    	<nameHan>登录</nameHan>
+    	<description>登录功能，提供：账号密码登录，邮箱验证码，QQ、微信等三方登录</description>
+    	<tag>基础功能</tag>
+
+    	<lowPrice>10</lowPrice>
+        <highPrice>70</highPrice>
+        
+    	<lowHour>1</lowHour>
+        <highHour>7</highHour>
+
+    	<author>yc</author>
+    	<onlineTime>2019-10-29</onlineTime>
+    </info>
+
+    <!-- 功能实现方式 -->
+    <methods>
+        <method>
+            <name>direct</name>
+            <nameHan>直接登录</nameHan>
+            <description>直接输入账号密码登录，提供：账号长度、非法字符检验</description>
+            <tag>基础实现</tag>
+
+            <lowPrice>10</lowPrice>
+            <lowHour>1</lowHour>
+
+            <author>yc</author>
+            <onlineTime>2019-10-29</onlineTime>
+        </method>
+        <method>            
+            <name>qq</name>
+            <nameHan>QQ登录</nameHan>
+            <description>QQ授权登录</description>
+            <tag>高级实现</tag>
+
+            <lowPrice>20</lowPrice>
+            <lowHour>2</lowHour>
+
+            <author>yc</author>
+            <onlineTime>2019-10-29</onlineTime>
+        </method>
+        <method>
+            <name>weiXin</name>
+            <nameHan>微信登录</nameHan>
+            <description>微信授权登录</description>
+            <tag>高级实现</tag>
+
+            <lowPrice>20</lowPrice>
+            <lowHour>2</lowHour>
+
+            <author>yc</author>
+            <onlineTime>2019-10-29</onlineTime>
+
+        </method>
+    </methods>
+
+    <sql>
+
+    </sql>
+</config>
