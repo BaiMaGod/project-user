@@ -24,15 +24,15 @@ public class InterceptorConfigurer implements WebMvcConfigurer {
         InterceptorRegistration loginRegistration = registry.addInterceptor(loginInterceptor);     // 拦截的对象会进入这个类中进行判断
         loginRegistration.addPathPatterns(
                 "/json/user/**");                    // 指定拦截请求
-        loginRegistration.excludePathPatterns(
-                "/json/user/search");       //添加不拦截
+//        loginRegistration.excludePathPatterns(
+//                "/json/user/search");       //添加不拦截
 
         // 管理员拦截 管理器
         InterceptorRegistration registration = registry.addInterceptor(adminInterceptor);     // 拦截的对象会进入这个类中进行判断
         registration.addPathPatterns(
-                "/json/user/**");                    // 指定拦截请求
-        registration.excludePathPatterns(
-                "/json/user/search");       //添加不拦截
+                "/json/userManage/**");                    // 指定拦截请求
+//        registration.excludePathPatterns(
+//                "/json/user/search");       //添加不拦截
     }
 
 }

@@ -7,13 +7,10 @@ import com.result.Result;
 public interface UserService {
     Result search(UserForm.searchForm form);
 
-    Result update(UserForm.updateForm form);
-
-    Result delete(UserForm.deleteForm form);
-
-    Result list(UserForm.listForm form);
-
     UserExt getUserById(int userId);
 
-    Result setRole(UserForm.setRoleForm form,UserExt loginUser);
+    Result update(UserForm.updateForm form);
+
+    Result updatePassword(UserForm.updatePasswordForm form);
+
 }
