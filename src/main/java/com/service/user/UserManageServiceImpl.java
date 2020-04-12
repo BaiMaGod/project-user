@@ -49,31 +49,31 @@ public class UserManageServiceImpl implements UserManageService {
         UserExample example = new UserExample();
         UserExample.Criteria criteria = example.createCriteria();
 
-        if(form.getUserId()!=null){
+        if(!StringUtils.isEmpty(form.getUserId())){
             criteria.andUserIdEqualTo(form.getUserId());
         }
-        if(form.getNumber()!=null){
+        if(!StringUtils.isEmpty(form.getNumber())){
             criteria.andNumberLike("%"+form.getNumber()+"%");
         }
-        if(form.getNickName()!=null){
+        if(!StringUtils.isEmpty(form.getNickName())){
             criteria.andNickNameLike("%"+form.getNickName()+"%");
         }
-        if(form.getTelPhone()!=null){
+        if(!StringUtils.isEmpty(form.getTelPhone())){
             criteria.andTelPhoneLike("%"+form.getTelPhone()+"%");
         }
-        if(form.getEmail()!=null){
+        if(!StringUtils.isEmpty(form.getEmail())){
             criteria.andEmailLike("%"+form.getEmail()+"%");
         }
-        if(form.getQq()!=null){
+        if(!StringUtils.isEmpty(form.getQq())){
             criteria.andQqLike("%"+form.getQq()+"%");
         }
-        if(form.getWeiXin()!=null){
+        if(!StringUtils.isEmpty(form.getWeiXin())){
             criteria.andWeiXinLike("%"+form.getWeiXin()+"%");
         }
-        if(form.getSex()!=null){
+        if(!StringUtils.isEmpty(form.getSex())){
             criteria.andSexEqualTo(form.getSex());
         }
-        if(form.getReadName()!=null){
+        if(!StringUtils.isEmpty(form.getReadName())){
             criteria.andReadNameLike(form.getReadName()+"%");
         }
 
